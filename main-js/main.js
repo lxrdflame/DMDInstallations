@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function()
 
         // Use image from images/INSTALLATION.png as the brand logo
         const img = document.createElement('img');
-        img.src = '../../Images/INSTALLATIONS-2.png';
+        img.src = '/Images/INSTALLATIONS-2.png';
         img.alt = 'DMD INSTALLATIONS';
         img.className = 'logo';
         brand.appendChild(img);
