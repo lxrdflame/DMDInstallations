@@ -135,12 +135,12 @@ padding: 0.5px;
 .request-service-btn{
     margin-left: 80px;
     padding: 10px 15px;
-    background-color: #839af6;
+     background-color: rgba(0, 86, 162, 0.349);
+     box-shadow: inset 2px 3px 7px #0088ffad, inset -3px -3px 7px rgba(4, 196, 255, 0.449);
     color: white;
-    border: #000000 2px solid;
+    border: #5253534f 2px solid;
     border-radius: 50px;
     cursor: pointer;
     font-size: 10px;
     transition: background-color 0.3s;
-    box-shadow: lightblue 0 0 10px;
 }
