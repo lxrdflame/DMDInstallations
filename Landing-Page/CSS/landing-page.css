@@ -19,7 +19,6 @@
     font-size: 6rem;
     color: black; /* primary */
     margin-bottom: 20px;
-    font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   text-align: center;
@@ -33,12 +32,6 @@ h2{
     
 }
 
-.services-div{
-    border-radius: 1px 400px 1px 1px;
-    padding: 20px;
-    font-family: 'Microma', 'Bebas Neue', sans-serif;
-}
-
 .Name-and-Slogan {
     flex: 1;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--primary-inner) 100%);
@@ -48,19 +41,6 @@ h2{
     text-align: center;
 }
 
-.satellite-image-div {
-    flex: 0 0 auto;
-    padding-right: 20%;
-
-}
-
-.satellite-image {
-    max-width: 110px; /* Adjust as needed */
-    height: auto;
-    border-radius: 10px;
-    /* choose one blend mode; remove duplicate property */
-    mix-blend-mode: multiply; /* Removes white backgrounds */
-}
 
 .services-list img{
     max-width: 600px;
@@ -79,9 +59,10 @@ h2{
     max-width: 100%;
     width: 100%;
     text-align: center;
-    background-color: #ffffffc0;
+    background-color: transparent;
     padding-top: 100px;
     padding-bottom: 100px;
+    
     
 }
 
@@ -106,12 +87,15 @@ h2{
     position: relative;
     z-index: 0;
     transform: translateZ(0);
+    
+    
 }
 
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 400px;
+    box-shadow: inset 2px 3px 7px #427cafff, inset -3px -3px 7px rgb(255, 255, 255);
 }
 
 .carousel-item {
@@ -170,7 +154,7 @@ h2{
 }
 
 .carousel-btn {
-    background: rgba(0, 247, 255, 0.2);
+    background: rgba(0, 247, 255, 0.368);
     border: none;
     color: var(--accent-warm); /* warm accent for controls */
     width: 50px;
@@ -183,11 +167,15 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 2px 3px 7px #427cafff, inset -3px -3px 7px rgb(255, 255, 255);
+
 }
 
 .carousel-btn:hover {
     background: rgba(0, 204, 255, 0.762);
     transform: scale(1.1);
+    box-shadow: inset 2px 3px 7px #427cafff, inset -3px -3px 7px rgb(255, 255, 255);
+
 }
 
 .indicators {
@@ -195,15 +183,17 @@ h2{
     justify-content: center;
     margin-top: 15px;
     gap: 10px;
+    
 }
 
 .indicator {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: var(--color-primary-12); /* subtle primary tint */
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: inset 2px 3px 7px #427cafff, inset -3px -3px 7px rgb(255, 255, 255);
+
 }
 
 .indicator.active {

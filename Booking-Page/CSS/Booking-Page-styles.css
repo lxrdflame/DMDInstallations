@@ -31,6 +31,7 @@ form {
     background: linear-gradient(280deg, #66a2e6 0%, #152e4c 100%);
     box-shadow: 0 0 15px #000000b0;
     margin-top: -30px;
+    
 }
 .service-form{
     background: linear-gradient(135deg, #66a2e6 0%, #152e4c 100%);
@@ -45,21 +46,16 @@ align-items: center;
 
 }
 
+.line{
+    width: 100%;
+}
+
 
 
 input, textarea, button {
   width: 80%;
   margin-bottom: 10px;
   padding: 10px;
-}
-
-button {
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  cursor: pointer;
-  width: 100px;
-  height: 50px;
 }
 
 .Page-Heading{
@@ -92,6 +88,8 @@ button {
 .contact-group a{
     color: white;
     text-decoration: none;
+    font-size: 20px;
+    
 }
 
 .contact-group li {
@@ -100,5 +98,51 @@ button {
     margin-top: 50px;
 }
 .contact-group a:hover{
+
+}
+
+textarea {
+    border-radius: 5px;
+  box-shadow: inset 2px 3px 7px #2d5578ad, inset -3px -3px 7px rgba(0, 213, 255, 0.449);
+    border-color: aqua;
+
+}
+
+.sendButton{
+border-radius: 50px;
+margin-left: 180px;
+margin-top: 50px;
+box-shadow: inset 3px 3px 7px #0088ffd5, inset -3px -3px 7px rgba(161, 207, 244, 0.449);
+width: 100px;
+height: 50px;
+font-size: medium;
+background-color: rgba(0, 255, 255, 0.173);
+border-color: aqua;
+
+}
+
+#social-media-icon{
+    font-size: 30px;
+box-shadow: inset 3px 3px 7px #0088ffd5, inset -3px -3px 7px rgba(161, 207, 244, 0.449);
+padding: 10px;
+border-radius: 50px;
+margin-right: 15px;
+margin-top: 5px;
+}
+
+.booking-heading{
+    width: 200px;
+        background: linear-gradient(280deg,#152e4cc2 0%, #66a2e6 200%);
+    margin-left: 950px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    padding-left: 6%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    z-index: 999999;
+    align-content: center;
+    justify-content: center;
+box-shadow: inset 3px 3px 7px #012545d5, inset -3px -3px 7px rgba(161, 207, 244, 0.449);
 
 }
