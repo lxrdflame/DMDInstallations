@@ -1,0 +1,150 @@
+.about-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 80%;
+    justify-content: center;
+    margin: 100px;
+}
+
+.about-card{
+    background: transparent;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px;
+         background: linear-gradient(135deg, #92bef0 0%, #2b4360 100%);
+    box-shadow: 2px 3px 7px #1d1d1de0, -3px -3px 7px rgba(80, 128, 156, 0.915);
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.about-hero{
+    margin: 50px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.About-container{
+    margin: 100px;
+     background: linear-gradient(135deg, #92bef0 0%, #2b4360 100%);
+     padding: 50px;
+     border-radius: 20px;
+    box-shadow: 2px 3px 7px #1d1d1de0, -3px -3px 7px rgba(80, 128, 156, 0.915);
+}
+
+.about-image img{
+    width: 200px;
+    margin-right: 80px;
+
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  /* make them fit perfectly */
+  height: 100%;
+  object-fit: contain; /* keep proportions */
+  padding-top: 50px;
+}
+
+.about-image{
+    position: relative; /* allows absolute positioning inside */
+  width: 200px;  /* adjust to your image size */
+  height: 200px;
+
+}
+
+/* When hovering over either image, both glow */
+.about-image:hover .target-image,
+.about-image:hover .arrow-image {
+  filter: drop-shadow(0 0 10px rgb(0, 195, 255));
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+h4{
+    font-size: 40px;
+    margin: 0;
+}
+
+
+.container {
+  perspective: 1000px; /* gives depth */
+}
+
+.fold-me {
+  transform-style: preserve-3d;
+  background: #00bcd4;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+}
+
+.right-page{
+    margin-left: -5px;
+}
+
+.right-page, .left-page{
+    width: 100px;
+  border: 1px solid #000000;
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  box-shadow: black 0 0 10px;
+  margin-top: 90px;
+}
+
+.book{
+    margin-right: 50px;
+}
+
+.plugs{
+    margin: 20px;
+    position: relative; /* allows absolute positioning inside */
+  width: 200px;  /* adjust to your image size */
+  height: 200px;
+  margin-top: 20px;
+}
+
+.plugs img{
+     width: 200px;
+    margin-right: 80px;
+
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  /* make them fit perfectly */
+  height: 100%;
+  object-fit: contain; /* keep proportions */
+  padding-top: 50px;
+    mix-blend-mode: multiply;
+  
+}
+
+.heart-hands{
+    margin: 20px;
+    position: relative; /* allows absolute positioning inside */
+  width: 200px;  /* adjust to your image size */
+  height: 200px;
+  margin-top: 20px;
+}
+
+.heart-hands img{
+    width: 200px;
+    margin-right: 80px;
+
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  /* make them fit perfectly */
+  height: 100%;
+  object-fit: contain; /* keep proportions */
+  padding-top: 50px;
+    mix-blend-mode: multiply;
+}
+

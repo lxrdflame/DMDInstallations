@@ -11,6 +11,8 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="../../GSAP-Animations-JS/Main-GSAP.js"></script>
+    <script src="../../GSAP-Animations-JS/About-page-GSAP.js"></script>
+
 </head>
 <body>
     <header>
@@ -20,7 +22,8 @@
 
        <main>
            <h1>DMD Installations</h1>
-        <section class="about-intro" aria-labelledby="about-title"></section>
+        <div class="About-container">
+            <section class="about-intro" aria-labelledby="about-title">
             <h2 id="about-title" class="sr-only">About DMD Installations</h2>
             <div class="about-hero">
                 <div class="about-text">
@@ -46,6 +49,11 @@
         </section>
 
         <section class="about-grid">
+            <div class="about-image">
+                <img class="target-image" src="../../Images/Target.png">
+                <img class="arrow-image" src="../../Images/Arrow.png">
+
+            </div>
             <article class="about-card">
                 <h4>Our Mission</h4>
                 <p>
@@ -63,7 +71,15 @@
                     keeping the same attention to detail and customer-first approach.
                 </p>
             </article>
+            <div class="book">
+                <img class="left-page" src="../../Images/left-page.png">
+                <img class="right-page" src="../../Images/right-page.png">
+            </div>
 
+            <div class="plugs">
+                <img class="right-plug" src="../../Images/right plug.png">
+                <img class="left-plug" src="../../Images/left plug.png">
+            </div>
             <article class="about-card">
                 <h4>What We Do</h4>
                 <ul>
@@ -73,7 +89,7 @@
                     <li>Maintenance and emergency support</li>
                 </ul>
             </article>
-
+            
             <article class="about-card">
                 <h4>Values</h4>
                 <ul>
@@ -83,6 +99,12 @@
                     <li>Honest pricing</li>
                 </ul>
             </article>
+            <div class="heart-hands">
+                <img class="heart" src="../../Images/Heart.png">
+                <img class="right-hand" src="../../Images/right-hand.png">
+                <img class="left-hand" src="../../Images/left-hand.png">
+
+            </div>
         </section>
 
         <section class="team-section" aria-labelledby="team-heading">
@@ -124,6 +146,12 @@
                 Email: <a href="mailto:info@dmdinstallations.example">info@dmdinstallations.example</a>
             </address>
         </section>
+        </div>
        </main>
+
+
+       
+</div>
+
 </body>
 </html>

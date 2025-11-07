@@ -9,31 +9,37 @@ document.addEventListener("DOMContentLoaded", function()
                 url: 'Images/DSTV-image.jpg',
                 title: 'DSTV Installation',
                 description: 'Dstv installations and Repairs including Multi-room setups, Dish Alignments, and Decoder Configurations. (Includes TV Mounting services).',
-                details: 'Location: Rocky Mountains | Photographer: John Smith'
+                details: 'More...',
+                Pageurl: 'Services-Page/Service-pages/DSTV-page.html'
             },
             {
                 url: 'Images/CCTV-Image.png',
                 title: 'CCTV Camera Setup',
                 description: 'Professional CCTV camera installations for homes and businesses. We provide high-quality surveillance solutions to ensure your property\'s safety and security.',
-                details: 'Location: Pacific Northwest | Season: Autumn'
+                details: 'More...',
+                Pageurl: 'Services-Page/Service-pages/CCTV-page.html'
             },
             {
                 url: 'Images/Alarm-Image.png',
                 title: 'Alarm System Installation',
                 description: 'Expert installation of alarm systems for residential and commercial properties. We ensure your safety with top-notch security solutions.',
-                details: 'Location: Urban Area | Time: Morning'
+                details: 'More...',
+                Pageurl: 'Services-Page/Service-pages/Alarm-page.html'
             },
             {
                 url: 'Images/Wifi-Image.png',
                 title: 'Wifi Installation',
                 description: 'Reliable wifi installation services for homes and businesses. We ensure seamless connectivity with our expert solutions.',
-                details: 'Location: Suburban Area | Time: Afternoon'
+                details: 'More...',
+                Pageurl: 'Services-Page/Service-pages/Wifi-page.html'
+
             },
             {
                 url: 'Images/Surround-Sound.png',
                 title: 'Surround Sound Installation',
                 description: 'Immersive surround sound systems for a cinematic experience at home. We design and install custom audio solutions tailored to your space.',
-                details: 'Location: Urban Area | Time: Evening'
+                details: 'More...',
+                Pageurl: 'Services-Page/Service-pages/SoundSystem-page.html'
             }
         ];
 
@@ -65,9 +71,11 @@ document.addEventListener("DOMContentLoaded", function()
                 description.className = 'image-description';
                 description.textContent = image.description;
                 
-                const details = document.createElement('p');
-                details.className = 'image-details';
+                const details = document.createElement('button');
+                details.className = 'More-btn';
                 details.textContent = image.details;
+               details.addEventListener('click', () => {
+                    window.location.href = image.Pageurl;});
                 
                 descriptionPanel.appendChild(title);
                 descriptionPanel.appendChild(description);

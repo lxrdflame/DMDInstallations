@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // --- Service Button ---
     const servicebtn = document.createElement("a");
     servicebtn.className = "service-btn";
-    servicebtn.href = "../../Contact-Page/HTML/Contact.html";
+    servicebtn.href = "../../Booking-Page/HTML/Booking-Page.html";
     servicebtn.textContent = "Request Service";
     nav.appendChild(servicebtn);
 

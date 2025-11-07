@@ -29,9 +29,10 @@ nav ul {
 
 body{
     font-family: "Exo 2", sans-serif;
-       background: linear-gradient(135deg, #234164 0%, #b2cff0 100%);
-
+    background: linear-gradient(135deg, #234164 0%, #b2cff0 100%);
     color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Page-Heading{
@@ -74,7 +75,7 @@ h1 {
 
 .nav-link:hover {
     color: #8594a7;
-    box-shadow: inset 2px 3px 7px #427cafff, inset -3px -3px 7px rgb(255, 255, 255);
+    box-shadow: inset 2px 3px 5px rgb(27, 31, 35), inset -3px -3px 5px rgb(207, 225, 241);
     padding: 8px 15px;
     border-radius: 50px;
     background-repeat: no-repeat;
@@ -84,6 +85,11 @@ h1 {
 }
 .nav-link a:active {
     color: #4a90e2;
+}
+
+button:hover{
+    box-shadow: inset 2px 3px 7px rgb(163, 197, 239), inset -3px -3px 7px rgb(54, 60, 65);
+    transform: scale(1.1);
 }
 
 .nav-link::after {
@@ -150,14 +156,19 @@ h1 {
     position: fixed;
     right: 50px;
     top: 30px;
-    box-shadow: inset 2px 3px 7px #0578dcd5, inset -3px -3px 7px rgba(161, 207, 244, 0.449);
+    box-shadow: inset 2px 3px 5px #ffffffe0, inset -3px -3px 5px rgba(0, 0, 0, 0.859);
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    background-color: rgba(0, 255, 255, 0.173);
+    background: transparent;
     border-color: aqua;
     
+}
+
+.service-btn:hover{
+    box-shadow: inset 2px 3px 7px rgb(0, 0, 0), inset -3px -3px 7px  #ffffff96;
+
 }
