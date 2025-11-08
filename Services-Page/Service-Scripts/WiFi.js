@@ -1,79 +1,79 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const servicesRoot = document.getElementById('SoundRoot');
+    const servicesRoot = document.getElementById('WiFiRoot');
     if (!servicesRoot) return;
 
     const services = [
         {
-            image: '../../Images/Sound-HomeTheater.jpg',
+            image: '../../Images/WiFi-Home.jpg',
             PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
-            title: 'Home Theater Installation',
+            title: 'Home Wi-Fi Installation',
             description:
-                'Enjoy cinematic sound at home with professional home theater setup — including speaker placement, surround sound calibration, and cable management.',
+                'Get reliable Wi-Fi coverage for your entire home — perfect setup for streaming, gaming, and smart home devices. Includes router setup and signal optimization.',
             BookService: 'Request Installation'
         },
         {
-            image: '../../Images/Sound-Office.jpg',
+            image: '../../Images/WiFi-Office.jpg',
             PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
-            title: 'Office Sound System Setup',
+            title: 'Office Wi-Fi Network Setup',
             description:
-                'Enhance your workspace with clear, high-quality audio systems for meetings, presentations, and background music — optimized for acoustic performance.',
-            BookService: 'Request Setup'
-        },
-        {
-            image: '../../Images/Sound-Outdoor.jpg',
-            PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
-            title: 'Outdoor Sound System Installation',
-            description:
-                'Bring music outdoors with weatherproof speakers and clean cabling — perfect for gardens, patios, and entertainment areas.',
+                'Professional-grade Wi-Fi solutions for offices and small businesses — includes network security, multiple device support, and high-speed internet optimization.',
             BookService: 'Request Installation'
         },
         {
-            image: '../../Images/Sound-Surround.jpg',
+            image: '../../Images/WiFi-Extender.jpg',
             PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
-            title: 'Surround Sound Calibration',
+            title: 'Wi-Fi Range Extender Setup',
             description:
-                'Get perfectly balanced sound with our surround sound calibration — we fine-tune speaker angles, distances, and output levels for immersive audio.',
-            BookService: 'Request Calibration'
+                'Eliminate dead zones in your home or office — our technicians configure range extenders or mesh systems for seamless connectivity throughout your space.',
+            BookService: 'Request Installation'
         },
         {
-            image: '../../Images/Sound-SmartHome.jpg',
+            image: '../../Images/WiFi-Mesh.jpg',
             PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
-            title: 'Smart Sound Integration',
+            title: 'Mesh Wi-Fi System Installation',
             description:
-                'Integrate your sound system with smart assistants like Alexa or Google Home — control music and volume with your voice or mobile app.',
-            BookService: 'Request Integration'
+                'Experience uninterrupted internet coverage with a mesh Wi-Fi system — ideal for large homes, multi-floor buildings, or properties with thick walls.',
+            BookService: 'Request Installation'
         },
         {
-            image: '../../Images/Sound-Wireless.jpg',
+            image: '../../Images/WiFi-RouterUpgrade.jpg',
             PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
-            title: 'Wireless Sound System Setup',
+            title: 'Router Upgrade & Configuration',
             description:
-                'We install and configure wireless sound systems for clutter-free, high-quality music streaming across multiple rooms or zones.',
+                'Upgrade to a high-speed router for faster, more secure connections — includes setup, firmware updates, and custom configuration for your devices.',
+            BookService: 'Request Upgrade'
+        },
+        {
+            image: '../../Images/WiFi-Security.jpg',
+            PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
+            title: 'Wi-Fi Security Configuration',
+            description:
+                'Keep your network safe from unauthorized access — we set up strong passwords, encryption, and guest networks to secure your connection.',
             BookService: 'Request Setup'
         },
         {
-            image: '../../Images/Sound-Repair.jpg',
+            image: '../../Images/WiFi-Troubleshooting.jpg',
             PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
-            title: 'Sound System Troubleshooting & Repair',
+            title: 'Wi-Fi Troubleshooting & Repair',
             description:
-                'Having sound issues? Our technicians diagnose and fix problems with amplifiers, speakers, or wiring to restore premium sound quality.',
+                'Experiencing slow speeds or connection drops? Our experts diagnose and fix network issues to restore stable and fast connectivity.',
             BookService: 'Request Repair'
         },
         {
-            image: '../../Images/Sound-Event.jpg',
+            image: '../../Images/WiFi-Hotspot.jpg',
             PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
-            title: 'Event Sound System Setup',
+            title: 'Wi-Fi Hotspot Installation',
             description:
-                'We provide professional sound setup for events, parties, and functions — ensuring clear and powerful audio for audiences of any size.',
-            BookService: 'Request Setup'
+                'Set up a reliable Wi-Fi hotspot for public areas, cafés, or events — includes secure login pages and bandwidth control for multiple users.',
+            BookService: 'Request Installation'
         },
         {
-            image: '../../Images/Sound-CustomDesign.jpg',
+            image: '../../Images/WiFi-NetworkDesign.jpg',
             PageUrl: '../../Booking-Page/HTML/Booking-Page.html',
-            title: 'Custom Sound System Design',
+            title: 'Custom Network Design',
             description:
-                'Tailored sound solutions designed to fit your home or business layout — from acoustic planning to complete installation.',
-            BookService: 'Request Design'
+                'We design and install complete networking solutions — from routers and switches to access points — tailored to your home or business needs.',
+            BookService: 'Request Service'
         }
     ];
 
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     services.forEach(service => {
         const serviceDiv = document.createElement('div');
-        serviceDiv.className = 'Sound-item';
+        serviceDiv.className = 'WiFi-item';
 
         serviceDiv.innerHTML = `
             <img src="${service.image}" alt="${service.title}">

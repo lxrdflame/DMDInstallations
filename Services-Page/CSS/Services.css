@@ -1,5 +1,5 @@
 :root{
-    --color-primary: #073B8A; /* darker tech blue */
+    --color-primary: #073B8A; 
     --color-primary-12: rgba(7, 59, 138, 0.12);
     --color-primary-03: rgba(7, 59, 138, 0.03);
     --primary-inner: rgba(3, 103, 252, 0.358);
@@ -128,6 +128,7 @@
   border: transparent;
 
 }
+
 
 @media (max-width: 780px) {
   .service-search{
