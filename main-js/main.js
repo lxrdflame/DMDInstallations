@@ -1,35 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
   (function () {
-  
     const root = document.getElementById("nav-root");
     if (!root) return;
 
-    // Use relative paths based on current page location
     const getRelativePath = (targetPath) => {
       const currentPage = window.location.pathname;
-      
-      // If we're already at the root, use direct paths
-      if (currentPage === '/' || currentPage.endsWith('/index.html')) {
-        return targetPath.startsWith('/') ? targetPath.substring(1) : targetPath;
+      if (currentPage === "/" || currentPage.endsWith("/index.html")) {
+        return targetPath.startsWith("/") ? targetPath.substring(1) : targetPath;
       }
-      
-      // Calculate how many directories deep we are
-      const depth = currentPage.split('/').length - 2; // minus filename and leading slash
-      
+      const depth = currentPage.split("/").length - 2;
       if (depth === 0) {
-        return targetPath.startsWith('/') ? targetPath.substring(1) : targetPath;
+        return targetPath.startsWith("/") ? targetPath.substring(1) : targetPath;
       } else {
-        // Go back to root then to target
-        return '../'.repeat(depth) + (targetPath.startsWith('/') ? targetPath.substring(1) : targetPath);
+        return "../".repeat(depth) + (targetPath.startsWith("/") ? targetPath.substring(1) : targetPath);
       }
     };
 
-    // --- Create Navbar ---
     const nav = document.createElement("nav");
     nav.className = "navbar";
     nav.setAttribute("aria-label", "Main Navigation");
 
-    // --- Brand Logo ---
     const brand = document.createElement("a");
     brand.className = "brand";
     brand.href = getRelativePath("index.html");
@@ -41,14 +31,12 @@ document.addEventListener("DOMContentLoaded", function () {
     brand.appendChild(img);
     nav.appendChild(brand);
 
-    // --- Service Button ---
     const servicebtn = document.createElement("a");
     servicebtn.className = "service-btn";
     servicebtn.href = getRelativePath("Booking-Page/HTML/Booking-Page.html");
     servicebtn.textContent = "Request Service";
     nav.appendChild(servicebtn);
 
-    // --- Navigation Links ---
     const ul = document.createElement("ul");
     ul.className = "nav-list";
 
@@ -72,19 +60,27 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.appendChild(ul);
     root.appendChild(nav);
 
-    // Rest of your code (highlighting, etc.) remains the same...
+    const currentFile = window.location.pathname.split("/").pop() || "index.html";
+    nav.querySelectorAll(".nav-link").forEach((link) => {
+      const linkFile = link.getAttribute("href").split("/").pop();
+      if (linkFile === currentFile) {
+        link.classList.add("active");
+        link.style.pointerEvents = "none";
+        link.style.cursor = "default";
+        link.style.boxShadow = "inset 2px 3px 7px #427cafff, inset -3px -3px 7px rgba(0, 0, 0, 0.47)";
+        link.style.padding = "10px 15px";
+        link.style.borderRadius = "50px";
+        link.style.backgroundColor = "transparent";
+        link.style.color = "#839af6";
+      }
+    });
   })();
 
-  // Rest of your existing hamburger and back-to-top code...
-});
-
-  // --- Hamburger Menu Logic ---
   const hamburger = document.querySelector(".hamburger");
   const navList = document.querySelector(".nav-list");
   const mobileOverlay = document.querySelector(".mobile-overlay");
   const body = document.body;
 
-  // Initialize hamburger menu functionality
   if (hamburger && navList && mobileOverlay) {
     hamburger.addEventListener("click", function () {
       this.classList.toggle("active");
@@ -100,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.remove("menu-open");
     });
 
-    // Close menu when clicking on nav links
     document.querySelectorAll(".nav-link").forEach((link) => {
       link.addEventListener("click", () => {
         hamburger.classList.remove("active");
@@ -110,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-    // Close menu on escape key
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         hamburger.classList.remove("active");
@@ -121,7 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // --- Back to Top Button ---
   const backToTopBtn = document.createElement("button");
   backToTopBtn.id = "backToTop";
   backToTopBtn.className = "back-to-top";
@@ -129,7 +122,6 @@ document.addEventListener("DOMContentLoaded", function () {
   backToTopBtn.setAttribute("aria-label", "Back to top");
   document.body.appendChild(backToTopBtn);
 
-  // Show/hide back to top button based on scroll position
   window.addEventListener("scroll", function () {
     if (window.pageYOffset > 300) {
       backToTopBtn.classList.add("show");
@@ -138,21 +130,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Smooth scroll to top when button is clicked
   backToTopBtn.addEventListener("click", function () {
-    window.scrollTo({ 
-      top: 0, 
-      behavior: "smooth" 
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
   });
 
-  // Keyboard accessibility for back to top button
   backToTopBtn.addEventListener("keydown", function (e) {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
-      window.scrollTo({ 
-        top: 0, 
-        behavior: "smooth" 
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
     }
   });
+});
