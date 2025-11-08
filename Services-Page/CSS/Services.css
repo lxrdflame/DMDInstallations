@@ -120,11 +120,19 @@
 
 .service-search{
   padding: 10px 100px;
-  margin: 20px 38% ;
+  margin: 20px 570px ;
   border-radius: 50px;
   box-shadow: inset 2px 3px 7px #000000ad, inset -3px -3px 7px rgb(255, 255, 255);
   background: #ffffffee;
   color: rgb(0, 0, 0);
   border: transparent;
+
+}
+
+@media (max-width: 780px) {
+  .service-search{
+  padding: 10px 100px;
+  margin: 20px 25%; ;
+  }
 
 }
