@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     brand.href = "../../index.html"; // link to home
 
     const img = document.createElement("img");
-    img.src = "../../Images/INSTALLATIONS-2.png";
+    img.src = "../../Images/DMD-Logo.png";
     img.alt = "DMD INSTALLATIONS";
     img.className = "logo";
     brand.appendChild(img);
