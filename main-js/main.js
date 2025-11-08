@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const items = [
       { text: "Home", href: getRelativePath("/DMDINSTALLATIONS/index.html") },
-      { text: "Services", href: getRelativePath("/DMDINSTALLATIONS/Services-Page/HTML/Services.html") },
-      { text: "About", href: getRelativePath("/DMDINSTALLATIONS/About-Page/HTML/About.html") },
-      { text: "Contact", href: getRelativePath("/DMDINSTALLATIONS/Booking-Page/HTML/Booking-Page.html") },
+      { text: "Services", href: getRelativePath("Services-Page/HTML/Services.html") },
+      { text: "About", href: getRelativePath("About-Page/HTML/About.html") },
+      { text: "Contact", href: getRelativePath("Booking-Page/HTML/Booking-Page.html") },
     ];
 
     items.forEach((it) => {
